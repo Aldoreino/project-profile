@@ -15,3 +15,43 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+	background-color: #6600CC;
+}
+
+.logo {
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	color: white;
+	border: 10px dashed white;
+	border-width: 5px;
+	border-height: 5px;
+	background-color: transparent;
+	width: 400px;
+	height: 200px;
+	position: relative;
+}
+
+.name {
+	padding-top: 15%;
+}
+
+.info {
+	margin: 0 auto;
+	color: white;
+
+}
+
+.welcome {
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 5%;
+	width: 400px;
+	height: 200px;
+}
+
+
+
+
