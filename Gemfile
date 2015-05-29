@@ -33,6 +33,9 @@ gem 'figaro' # securely configure rails applications
 
 gem 'carrierwave' # provides a simple and flexible way to upload files from ruby apps
 
+gem 'mini_magick'
+
+gem 'fog'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
