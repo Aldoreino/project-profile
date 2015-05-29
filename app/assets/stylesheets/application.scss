@@ -18,6 +18,7 @@
 
 body {
 	background-color: #6600CC;
+	overflow-x: hidden;
 }
 
 .logo {
@@ -56,16 +57,21 @@ body {
 	height: 200px;
 }
 
-#border {
-	width: 1400px;
-	height: 770px;
-	border: 3px solid white;
-	margin: 0 auto;
+
+.heading {
+	margin-top: 10px;
+	border: 2px solid white;
+	height: 300px;
 }
 
-#img1 {
-	width: 500px;
-	height: 300px;
+.content {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 30px;	
+	border: 2px solid white;
+	height: 250px;
+}
+/*#img1 {
 	border: 2px solid white;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -96,11 +102,13 @@ body {
 	height: 180px;
 	border: 2px solid white;
 	float: left;
-}
+}*/
 
 .save {
 	color: white;
 	font-size: 24px;
+	float: right;
+	margin-right: 25px;
 }
 
 
