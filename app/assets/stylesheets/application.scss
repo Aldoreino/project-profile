@@ -45,7 +45,7 @@ body {
 .info {
 	margin: 0 auto;
 	color: white;
-
+	text-align: center;
 }
 
 .welcome {
@@ -55,6 +55,60 @@ body {
 	width: 400px;
 	height: 200px;
 }
+
+#border {
+	width: 1400px;
+	height: 770px;
+	border: 3px solid white;
+	margin: 0 auto;
+}
+
+#img1 {
+	width: 500px;
+	height: 300px;
+	border: 2px solid white;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#text1 {
+	margin-top: 30px;
+	margin-left: 220px;
+	width: 300px;
+	height: 180px;
+	border: 2px solid white;
+	float: left;
+}
+
+#text2 {
+	margin-top: 30px;
+	margin-left: 15px;
+	width: 300px;
+	height: 180px;
+	border: 2px solid white;
+	float: left;
+}
+
+#img2 {
+	margin-top: 30px;
+	margin-left: 15px;
+	width: 300px;
+	height: 180px;
+	border: 2px solid white;
+	float: left;
+}
+
+.save {
+	color: white;
+	font-size: 24px;
+}
+
+
+
+
+
+
+
 
 
 
