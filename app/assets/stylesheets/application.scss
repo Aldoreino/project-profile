@@ -22,6 +22,9 @@ body {
 }
 
 .logo {
+	background-image: url("gear_background.jpg");
+	background-size: cover;
+	text-shadow: 1px red;
 	margin: 0 auto;
 	margin-top: 50px;
 	text-align: center;
@@ -44,7 +47,9 @@ body {
 }
 
 .info {
+
 	margin: 0 auto;
+	background-color: black;
 	color: white;
 	text-align: center;
 }
@@ -71,48 +76,25 @@ body {
 	border: 2px solid white;
 	height: 250px;
 }
-/*#img1 {
-	border: 2px solid white;
-	margin: 0 auto;
-	margin-top: 20px;
+
+.button {
+	width: 120px;
+	height: 40px;
 }
 
-#text1 {
-	margin-top: 30px;
-	margin-left: 220px;
-	width: 300px;
-	height: 180px;
-	border: 2px solid white;
-	float: left;
+.start {
+	width: 160px;
+	height: 50px; 
 }
-
-#text2 {
-	margin-top: 30px;
-	margin-left: 15px;
-	width: 300px;
-	height: 180px;
-	border: 2px solid white;
-	float: left;
-}
-
-#img2 {
-	margin-top: 30px;
-	margin-left: 15px;
-	width: 300px;
-	height: 180px;
-	border: 2px solid white;
-	float: left;
-}*/
 
 .save {
+	margin-top: 10px;
+	background-color: black;
 	color: white;
 	font-size: 24px;
 	float: right;
 	margin-right: 25px;
 }
-
-
-
 
 
 
