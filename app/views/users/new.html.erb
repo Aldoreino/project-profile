@@ -1,12 +1,15 @@
 <h1 class="info">Sign up</h1>
-<div class="col-sm-2 col-sm-offset-5 signup"><!-- centers the form in the center of the page -->	
-	<%= form_for (@user) do |f| %>
-		Name: <%= f.text_field :name %>
-		Email: <%= f.text_field :email %>
-		Password: <%= f.password_field :password %>
-		Password Confirmation: <%= f.password_field :password_confirmation %>
+<div class="col-sm-2 col-sm-offset-5 signup"><!-- centers the form in the center of the page -->
+	<div class="box">
+		<h3 id="head">Please sign up in order to create your own profile</h3>
+		<%= form_for (@user) do |f| %>
+			Name: <%= f.text_field :name %>
+			Email: <%= f.text_field :email %>
+			Password: <%= f.password_field :password %>
+			Password Confirmation: <%= f.password_field :password_confirmation %>
 
-		<%= f.submit 'Submit' %>
+			<%= f.submit 'Submit' %>
 
-	<% end %>
+		<% end %>
+	</div>
 </div>
