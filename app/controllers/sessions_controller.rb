@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+	def new
+	end
 	def create
 		params[:email]
 		user = User.find_by_email(params[:email]) # creates session for user based on email

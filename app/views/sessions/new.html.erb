@@ -2,7 +2,7 @@
 <div class="col-sm-2 col-sm-offset-5 signup"><!-- centers the form in the center of the page -->
 	<div class="box">
 		<h3 id="head">Please log in to create a new profile</h3>
-		<%= form_tag (@user) do |f| %>
+		<%= form_tag ('/sessions') do %>
 			Email: <%= text_field_tag :email %>
 			Password: <%= password_field_tag :password %>
 
