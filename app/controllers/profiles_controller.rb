@@ -3,7 +3,7 @@ class ProfilesController < ApplicationController
 		@profiles = Profile.all
 	end
 	def new
-		@profile = Profile.new
+		@profile = Profile.new(profile_params)
 	end
 	def create
 		@profile = Profile.new(profile_params)
