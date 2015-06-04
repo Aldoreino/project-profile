@@ -10,7 +10,7 @@ class ProfilesController < ApplicationController
 		if @profile.save
 			redirect_to '/' # this needs to change! should redirect to new page
 		else
-			render '/' # this needs to change! should not render root if unsuccesful
+			render '/profiles/new' # if the upload is unsuccessful, render the page again
 		end
 	end
 	def show
