@@ -1,5 +1,8 @@
-<%=  form_for(@profile, html: {multipart: true}) do |f| %>
-	<h1 class="info"><%= @user %>'s Profile</h1>
+<%= form_for(@profile, html: {multipart: true}) do |f| %>
+	<h1 class="info"><%= current_user.name %>'s Profile</h1>
+	<% if current_user %>
+	<%=  link_to "Sign out", "/logout" %>
+	<% end %>
 	<div class='row'>
 		<div class="col-md-4 col-md-offset-4 heading">	
 			<div id="img1"></div>
@@ -8,13 +11,6 @@
 			</span>
 		</div>	
 	</div>
-
-
-
-	  
-	  
-
-
 	<div class="row">
 		<div class="col-md-4">
 			<div class="content">

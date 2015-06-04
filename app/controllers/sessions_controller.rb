@@ -10,10 +10,11 @@ class SessionsController < ApplicationController
 			redirect_to '/' # redirect the user to root if session is created
 		else
 			flash[:error] = "Incorrect password or email" # displays error message if session is not created
-			render 'users/new' # and renders the log in page once again
+			render 'sessions/new' # and renders the log in page once again
 		end
 	end
 	def destroy # destroys the session (logs the user out)
-
+		session[:user_id] = nil
+		redirect_to '/'
 	end
 end
