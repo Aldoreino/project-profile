@@ -1,33 +1,42 @@
+<%=  form_for(@profile, html: {multipart: true}) do |f| %>
+	<h1 class="info"><%= @user %>'s Profile</h1>
+	<div class='row'>
+		<div class="col-md-4 col-md-offset-4 heading">	
+			<div id="img1"></div>
+			<span class="picture">
+			    <%= f.file_field :picture %>
+			</span>
+		</div>	
+	</div>
 
-<h1 class="info"><%= @user %>'s Profile</h1>
-<div class='row'>
-	<div class="col-md-4 col-md-offset-4 heading">	
-		<div id="img1"></div>
-	</div>	
-</div>
 
-<div class="row">
-<%= form_for(@profile, html: { multipart: true }) do |f| %>
 
-  <div class="field">
-    <%= f.text_area :content, placeholder: "upload a new image..." %>
-  </div>
-  <%= f.submit "Post", class: "btn btn-primary" %>
-  <span class="picture">
-    <%= f.file_field :picture %>
-  </span>
-<% end %>
-	<div class="col-md-4">
-		<div class="content">
+	  
+	  
+
+
+	<div class="row">
+		<div class="col-md-4">
+			<div class="content">
+				<div class="text_field"><%= text_area_tag(:content) %></div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="content">	
+				<%= text_area_tag(:info) %>
+			</div>		
+		</div>
+		<div class="col-md-4">
+			<div class='content'>
+			    <%= f.file_field :picture %>
+			</div>		
 		</div>
 	</div>
-	<div class="col-md-4">
-		<div class="content">	
-		</div>		
-	</div>
-	<div class="col-md-4">
-		<div class='content'>
-		</div>		
-	</div>
-</div>
-<div class="save">Next Page</div>
+	<div class="row">
+		<div class="col-md-5 col-md-offset-7">
+
+		<%= f.submit "Next Page", class: "save" %>
+			</div>
+		</div>
+
+<% end %>

@@ -3,10 +3,10 @@
 	<div class="box">
 		<h3 id="head">Please sign up in order to create your own profile</h3>
 		<%= form_for (@user) do |f| %>
-			Name: <%= f.text_field :name, class: "form" %>
-			Email: <%= f.text_field :email, class: "form" %>
-			Password: <%= f.password_field :password, class: "form" %>
-			Password Confirmation: <%= f.password_field :password_confirmation, class: "form" %>
+			Name: <%= f.text_field :name, class: "form-control" %>
+			Email: <%= f.text_field :email, class: "form-control" %>
+			Password: <%= f.password_field :password, class: "form-control" %>
+			Password Confirmation: <%= f.password_field :password_confirmation, class: "form-control" %>
 
 			<%= f.submit 'Submit' %>
 
