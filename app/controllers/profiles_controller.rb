@@ -8,7 +8,7 @@ class ProfilesController < ApplicationController
 	def create
 		@profile = Profile.new(profile_params)
 		if @profile.save
-			redirect_to '/' # this needs to change! should redirect to new page
+			redirect_to '/profiles' # this needs to change! should redirect to new page
 		else
 			render '/profiles/new' # if the upload is unsuccessful, render the page again
 		end
@@ -18,6 +18,6 @@ class ProfilesController < ApplicationController
 	end
 	private
 	def profile_params
-		params.require(:profile).permit(:content, :picture)
+		params.require(:profile).permit(:content, :picture, :activity)
 	end
 end

@@ -11,10 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150603203049) do
+ActiveRecord::Schema.define(version: 20150604224020) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "post_attachments", force: :cascade do |t|
+    t.integer  "post_id"
+    t.string   "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "profiles", force: :cascade do |t|
     t.text     "info"
@@ -23,6 +36,7 @@ ActiveRecord::Schema.define(version: 20150603203049) do
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "activity"
   end
 
   add_index "profiles", ["user_id"], name: "index_profiles_on_user_id", using: :btree

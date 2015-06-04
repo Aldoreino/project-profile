@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :post_attachments
+  resources :posts
   root 'welcome#index'
 
    match '/request' => 'profile#create', via: :post # post request to send data to Amazon S3

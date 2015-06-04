@@ -1,27 +1,13 @@
-
-<h1 class="info"><%= @user %>'s Profile</h1>
-<div class='row'>
-	<div class="col-md-4 col-md-offset-4 heading">	
-		<div id="img1"></div>
-	</div>	
+<div class="center">	
+	<h2>You're all Done</h2>
+	<h3>To view your completed profile or share it, please copy and paste this link</h3>
+	<h2>link:<%=  %></h2><!-- the unique link will appear here -->
 </div>
-
 <div class="row">
-	<div class="col-md-4">
-		<div class="content">
-		</div>
-	</div>
-	<div class="col-md-4">
-		<div class="content">	
-		</div>		
-	</div>
-	<div class="col-md-4">
-		<div class='content'>
-		</div>		
-	</div>
+	<div class="col-md-4 col-md-offset-4">
+		<%= link_to "New Profile", "/", class: "btn btn-default" %>
+	</div>			
 </div>
-<div class="save">Next Page</div>
-
 
 
 
