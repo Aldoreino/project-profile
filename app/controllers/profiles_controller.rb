@@ -1,6 +1,7 @@
 class ProfilesController < ApplicationController
 	def index
 		@profiles = Profile.all
+		@profile = profile(:id)
 	end
 	def new
 		@profile = Profile.new
@@ -8,7 +9,7 @@ class ProfilesController < ApplicationController
 	def create
 		@profile = Profile.new(profile_params)
 		if @profile.save
-			redirect_to '/profiles' # this needs to change! should redirect to new page
+			redirect_to profile_path(@profile.id) # this needs to change! should redirect to new page
 		else
 			render '/profiles/new' # if the upload is unsuccessful, render the page again
 		end

@@ -14,12 +14,12 @@
 	<div class="row">
 		<div class="col-md-4">
 			<div class="content">
-				<div class="text_field"><%= text_area_tag(:content) %></div>
+				<div class="text_field"><%= f.text_area :content, id: "content" %></div>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="content">	
-				<%= text_area_tag(:info) %>
+				<%= f.text_area :info, id: "info" %>
 			</div>		
 		</div>
 		<div class="col-md-4">

@@ -1,4 +1,4 @@
-<%= form_for(@profile, html: {multipart: true}) do |f| %>
+<!-- <%#= @user.name %> -->
 	<h1 class="info"><%= current_user.name %>'s Profile</h1>
 	<% if current_user %>
 	<%= link_to "Log out", logout_path, method: "delete" %>
@@ -7,31 +7,24 @@
 		<div class="col-md-4 col-md-offset-4 heading">	
 			<div id="img1"></div>
 			<span class="picture">
-			    <%= f.file_field :picture %>
+			    <%= image_tag @profile.picture.url, class: "main_picture" %>
 			</span>
 		</div>	
 	</div>
 	<div class="row">
 		<div class="col-md-4">
 			<div class="content">
-				<div class="text_field"><%= text_area_tag(:content) %></div>
+				<div class="text_field"><%= @profile.content %></div>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="content">	
-				<%= text_area_tag(:info) %>
+				<div class="text-field"><%= @profile.info %></div>
 			</div>		
 		</div>
 		<div class="col-md-4">
 			<div class='content'>
-			    <%= f.file_field :picture %>
+			    <%= image_tag @profile.activity.url, class: "other_picture" %>
 			</div>		
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-5 col-md-offset-7">
-
-		<%= f.submit "Next Page", class: "save" %>
-		</div>
-	</div>
-<% end %>
