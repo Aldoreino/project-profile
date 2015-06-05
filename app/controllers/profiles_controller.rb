@@ -19,6 +19,6 @@ class ProfilesController < ApplicationController
 	end
 	private
 	def profile_params
-		params.require(:profile).permit(:content, :picture, :activity)
+		params.require(:profile).permit(:content, :picture, :activity, :info)
 	end
 end
