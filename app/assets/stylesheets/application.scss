@@ -67,6 +67,8 @@ body {
 	margin-top: 10px;
 	border: 2px solid white;
 	height: 300px;
+	position: relative;
+	overflow: hidden;
 }
 
 .content {
@@ -75,6 +77,8 @@ body {
 	margin-top: 30px;	
 	border: 2px solid white;
 	height: 250px;
+	position: relative;
+	overflow: hidden;
 }
 
 .button { /* buttons on the main page */
@@ -110,6 +114,8 @@ body {
 
 .text_field {
 	height: 250px;
+	color: white;
+	font-size: 25px;
 }
 
 #info { /* subject to change */
@@ -141,16 +147,16 @@ body {
 
 .main_picture {
 	overflow: hidden;
+	max-width: 100%;
 }
 
 .other_picture {
 	overflow: hidden;
+	max-width: 100%;
+	max-width: 100%;
 }
 
-.text {
-	font-size: 25px;
-	color: white;
-}
+
 
 
 
